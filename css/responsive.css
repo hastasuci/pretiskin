@@ -1,0 +1,121 @@
+/* Laptop */
+@media (max-width: 1366px){
+    html{
+        font-size: 75%
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px){
+    html{
+        font-size: 62.5%
+    }
+    #menu{
+        display: inline-block;
+    }
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 20rem;
+        background-color: #fff;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+    }
+
+    .navbar .navbar-nav a{
+        color: var(--deep);
+        display: block;
+        padding: 0.5rem;
+        margin: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar-nav a:hover::after{
+        transform: scaleX(0.1);
+    }
+
+    .navbar .navbar-extra #menu::after{
+        color: var(--deep);
+    }
+
+    .navbar .search-form{
+        right: 2rem;
+        width: 80%;
+    }
+
+    .about .row{
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content{
+        padding: 0;
+    }
+
+    .about .row .content h3{
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .about .row .content p{
+        font-size: 1.6rem;
+    }
+
+    .product p{
+        font-size: 1.2rem;
+    }
+
+    .product .row .product-card{
+        flex: 0 0 50%;
+        padding-bottom: 1rem;
+    }
+
+
+    .contact .row{
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map{
+        height: 30rem;
+    }
+
+    .contact .row form{
+        padding-top: 0;
+    }
+    
+    .contact .row form .input-group{
+        padding-left: 1rem;
+    }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px){
+    html{
+        font-size: 55%
+    }
+    #menu{
+        display: inline-block;
+    }
+
+    .product .row .product-card{
+        flex: 0 0 100%;
+    }
+
+    .contact .row form .input-group{
+        padding-left: 0.5rem;
+    }
+}
